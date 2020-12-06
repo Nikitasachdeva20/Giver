@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href= "C:/xampp/htdocs/slidee.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("image/bora.jpeg");
+  min-height: 100%;
+  width: auto;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  [class*= "w3-"]{
+    width: 100%;
+  }
+}
+
+
+
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+     <div class="w3-circle">
+        <img src= "image/logo4.jpg" style= "width:120px">
+
+    
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item w3-button"> HOME</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-group"></i>TEAM</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-exclamation-circle"></i> ABOUT US</a>
+      </div>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#contactt" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Always be a Giver!</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Always be a Giver!</span><br>
+    <span class="w3-large">“There is no exercise better for the heart than reaching down and lifting people up.”</span>
+    <p><a href="#pickupaddress" class="w3-button w3-blue w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">DONATE  CLOTHES/FOOD! </a></p>
+    <p><a href="#pricing" class="w3-button w3-blue w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">DONATE MONEY!</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-white w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+
+<!-- About Section -->
+<div class="w3-container" style= "background-color: #9995da"  "padding:128px 16px"  id="about">
+  <h3 class="w3-center">OUR VISION</h3>
+  
+  <div class="w3-row-padding w3-center" style="margin-top:100px" >
+    <div class="w3-quarter">
+      <i class="fa fa-star w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Welfare</p>
+      <p>We're GIVER Foundation and for the past 19 years we've been providing help to the unpriviledged people.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Belief</p>
+      <p>We believe no one has ever become poor by giving and there is no exercise better for the heart than reaching down and lifting people up.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-group w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Team</p>
+      <p>Our community volunteers are a huge part of our success story and we plan to do more and more work with your help.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-handshake-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Connect</p>
+      <p>Stories need heroes. Join us in the campaign, a journey to bring happiness to everyone.</p>
+    </div>
+  </div>
+</div>
+<!-- Promo Section "Statistics" -->
+<div class="w3-container  w3-row w3-center w3-padding-64" style="background-color:#DA70D6" >
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">300+</span>
+    <br>Volunteers
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>GIVER Members
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Works/Projects
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Lovely Donors
+  </div>
+</div>
+
+
+<!-- Promo Section -  -->
+<div class="w3-container w3-dark-gray" style= "padding:128px 16px">
+
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We reach out to people on your behalf!</h3>
+      <p>“It's not how much we give but how much love we put into giving.”
+― Mother Theresa</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="image/mother.jpg" alt="Mother Teresa" width="500" height="300">
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Work Section -->
+<div class="w3-container "  style=  "background-color: #9995da" "padding:200px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done together</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="image/work1.jpg" style="width:100% " onclick="onClick(this)" class="w3-hover-opacity" alt="children">
+       
+ </div>
+    <div class="w3-col l3 m6">
+      <img src="image/work2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="volunteers">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="image/work3.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="volunteers">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="image/work4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="team">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="image/work5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="team">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="image/work6.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="volunteers">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="image/work7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="volunteers">
+    </div>
+   
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+<!-- STORIES Section -->
+
+
+<div class="w3-container w3-blue-gray " style= "padding:128px 16px" id="team">
+  <h3 class="w3-center">STORIES NEED HEROES</h3>
+  
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="image/work4.jpg" alt="old lady" style="width:100%">
+        <div class="w3-container">
+          <h3>Rama Devi</h3>
+          
+          <p class="w3-opacity">A beautiful story of an old lady...</p>
+          <a href= "readmore.html" title=" About me">
+ <button> read more </button>
+ </a>
+          
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="image/story1.png" alt="sarahr" style="width:100%">
+        <div class="w3-container">
+          <h3>Sarah Lin</h3>
+          <p class="w3-opacity"> A 8-years old girl whose....</p>
+  <a href= "readmore.html" title=" About me">
+ <button> read more </button>
+ </a>
+             </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="image/story88.jpg" alt="Neha" style="width:100%">
+        <div class="w3-container">
+          <h3>Neha Kumari</h3>
+          <p class="w3-opacity">A girl whose dream was to go to school but....</p>
+        <a href= "readmore.html" title=" About me">
+ <button> read more </button>
+ </a>
+        
+          </div>
+      </div>
+    </div>
+ <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="image/story555.jpg" alt="sarah" style="width:100%">
+        <div class="w3-container">
+          <h3>Gulsan Singh</h3>
+          <p class="w3-opacity">A 19-years old girl who was...</p>
+          <a href= "readmore.html" title=" About me">
+ <button> read more </button>
+ </a>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--stories end section--> 
+
+
+
+<!-- Skills Section -->
+<div class="w3-container w3-sand w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Be a GIVER!</h3>
+
+      <p>There goes a famous saying “Charity begins at home.” This is an old saying with a deep hidden meaning
+ inside. This means that it is not enough to contribute goods and money to the charitable organizations alone.
+ If your own grandmother is lying on the bed and you do not serve her and instead are interested in helping a
+ charitable organization,
+ you surely do not understand the true meaning of charity.</p>
+      
+    </div>
+    <div class="w3-col m6">
+<h4> Donations </h4>
+      <p class="w3-wide"><i class=" w3-margin-right"></i>By money</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class=" w3-margin-right"></i>By clothes</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class=" w3-margin-right"></i>By packaged foods</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-gray" style="padding:128px 16px" id="pricing">
+  <h3>We're sorry for the inconvenience</h3>
+  <p class="w3-large">Currently we're not accepting money for the donation but you can always help us by giving us clothes or packaged foods. You can fill out the form and we'll
+come at your door to get it </p>
+  
+</div>
+
+
+<!-- Start Contact Section -->
+
+ <div class="w3-container w3-blue-gray " style=  "padding:128px 16px" id="pickupaddress">
+
+  
+  <div class="w3-content" style="max-width:600px">
+<h3 class="w3-center">DONATE CLOTHES/PACKAGED FOODS</h3>
+  <p class="w3-center w3-large">Great! Now not only with money, But you can also help others by sending us clothes or packaged food. You need not to worry,
+ We will come at your door to get it.  Fill in the form given below:</p>
+  
+
+    <script type="text/javascript">var submitted=false;</script>
+    
+    <!--Update the URL for thank you page on form submit -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='C:/xampp/htdocs/index.html';}"></iframe> 
+    
+    <!-- Update the Google forms URL in action-->
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScKMUxVILuiCPVV8gEk76RcWqhB0RpT_sPqZ_jbHTBUDeD1Kg/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+
+      <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Motihari, Bihar</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 7004721891</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: nikkisachdeva71@mail.com</p>
+    <br>
+      <div class="w3-section">
+        <form action="/action_page.php" target="blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" id="name" required name="entry.665758840"></p>
+      
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" id="email" required name="entry.627519843"></p>
+     
+          <p><input class="w3-input w3-border" type="text" placeholder="Phone" id="phone" required name="entry.2009514561"></p>
+      
+          <p> <input class="w3-input w3-border" type="text" placeholder="Address" id="address" required name="entry.681562914"></p>
+          <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SUBMIT
+        </button>
+      </p>
+    </form>
+      </div>
+       </div>
+</div>
+</div>
+    <script type="text/javascript">
+    function validateName() {
+            var name = document.getElementById('name').value;
+            if(name.length == 0) {
+              alert("Name can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct name") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+
+          function validatePhone() {
+            var phone = document.getElementById('phone').value;
+            if(phone.length == 0) {
+              alert("Phone number can't be blank") ;//Validation Message
+              return false;
+            }
+
+            if(!phone.match(/^[0]?[789]\d{9}$/)) {
+             alert("Please enter a correct phone number") ;//Validation Message
+             return false;
+           }
+
+           return true;
+
+         }
+
+         function validateEmail () {
+
+          var email = document.getElementById('email').value;
+          if(email.length == 0) {
+            alert("Email can't be blank") ;//Validation Message
+            return false;
+
+          }
+
+          if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+            alert("Please enter a correct email address") ;//Validation Message
+            return false;
+
+          }
+
+          return true;
+
+        }
+
+
+        function validateForm() {
+          if (!validateName() || !validatePhone() || !validateEmail()) {
+
+            alert("Form not submitted");//Validation Message
+            return false;
+          }
+          else {
+            submitted=true;
+            return true;
+          }
+        }
+        </script>
+
+<!-- End Contact Section -->
+
+<!-- Start Contact Section -->
+ <div class="w3-container w3-sand" style="padding:128px 16px" id="contact">
+   <div class="w3-content" style="max-width:600px">
+     <h4 class="w3-center"><b>CONTACT US</b></h4>
+     <p class="w3-center w3-large"> Have any queries? Lets get in touch. Send us a message:</p>
+      <div class="w3-content" style="max-width:600px">
+    
+    <script type="text/javascript">var submitted=false;</script>
+    
+    <!--Update the URL for thank you page on form submit -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location.reload()}"></iframe> 
+    
+    <!-- Update the Google forms URL in action-->
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfduJdwUKnCDU_967wzN2ZIJLl635mufobinjd31DGfjqxtmg/formResponse" method="post" target="hidden_iframe" onsubmit="return validateeForm(); ">
+
+      
+      <div class="w3-section">
+      <form  id="contactForm" action="/action_page.php" target="blank"  >
+         
+          <p><input class="w3-input w3-border" type="text" placeholder="name" id="namee" required name="entry.1433874347"></p>
+      
+          <p><input class="w3-input w3-border" type="text" placeholder="email id" id="email_id" required name="entry.1942685791"></p>
+     
+          <p><input class="w3-input w3-border" type="text" placeholder="your message" id="your message" required name="entry.566771202"></p>
+      
+          
+          <p>
+        <button class="w3-button w3-black" type="submit" onclick="submitForm()">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+      </div>
+
+      
+ </div>
+</div>
+</div>
+    <script type="text/javascript">
+     
+    function submitForm() {
+      document.getElementById("contactForm").value='';
+      document.getElementById("namee").value= null;
+      document.getElementById("email_id").value= null;
+    }
+     
+
+      
+
+
+    function validateNamee() {
+            var name = document.getElementById('namee').value;
+            if(namee.length == 0) {
+              alert("Name can't be blank") ;
+              return false;
+
+            }
+            if (!namee.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct name") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+
+          
+
+         function validateEmailid () {
+
+          var emailid = document.getElementById('email_id').value;
+          if(email.length == 0) {
+            alert("Email can't be blank") ;//Validation Message
+            return false;
+
+          }
+
+          if(!email_id.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+            alert("Please enter a correct email address") ;//Validation Message
+            return false;
+
+          }
+
+          return true;
+
+        }
+
+
+        function validateeForm() {
+          if (!validateNamee()  || !validateEmailid()) {
+
+            alert("Form not submitted");//Validation Message
+            return false;
+          }
+          else {
+            submitted=true;
+            return true;
+          }
+        }
+
+   
+      
+   
+    </script>
+
+<!-- End Contact Section -->
+
+
+<!-- owner Section -->
+<div class="w3-container  " style= " background: linear-gradient(to bottom, #9995da 0%, #ffffff 100%)" "padding:50px 10px" id="team">
+  <h3 class="w3-center">OWNER</h3>
+  <p class="w3-center w3-large">The one who runs this foundation-</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+  
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="image/nick1.jpg" alt="nikita" style="width:100%">
+        <div class="w3-container">
+          <h3>Nikita Sachdeva</h3>
+          <p class="w3-opacity">CEO</p>
+          
+        </div>
+      </div>
+    </div>
+      <h4 class="w3-center"><br><br><br>It's been a long journey and i'm immensly grateful for your continuous support.<br>
+     Even the small contribution will support us to feed family member and caregivers of underpriviliged people . <br><br>“At the end of life we will not be judged by how many diplomas we have received, how much money we have made, how many great things we have done.
+We will be judged by “I was hungry, and you gave me something to eat, I was naked and you clothed me. I was homeless, and you took me in.”
+―Mother Teresa</h4>
+   
+  </div>
+</div>
+
+
+<!--awards-->
+<h2 class="w3-center">AWARDS</h2>
+
+<div class=  "w3-slideshow-container w3-sand" style="padding:10px 16px">
+ 
+  <div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+   <div style="text-align: center">
+  <img src="image/awards.jpg" width:"100">
+  </div>
+   
+  
+  <div class="text">LOVE</div>
+  
+</div>
+
+ <div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+    <div style="text-align: center">
+   <img src="image/award9.jpg" width:"100">
+    </div>
+  <div class="text">HOPE</div>
+</div>
+ 
+
+ <div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+   <div style="text-align: center">
+  <img src="image/award101.jpg" width:"100">
+    </div>
+  <div class="text">BE A GIVER</div>
+ </div>
+
+
+
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+   for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2500); // Change image every 2.5 seconds
+}
+</script>
+
+<div class=  "w3-container w3-center" style="padding:50px 16px">
+
+  <img src="image/giver.gif" >
+</div>
+ 
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Developed by- Nikita Sachdeva</p>
+   <p1>Copyright &copy; 2020 Giver Foundation, All rights reserved. </p1>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
